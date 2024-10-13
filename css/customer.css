@@ -1,0 +1,74 @@
+:root
+{
+  --lineared-bg:linear-gradient(45deg, #B6410F,#4A5C6A);
+  --bg-color:var(--lineared-bg);
+  --text-color:#1b1930;
+  --text-color-light:#fff;
+  --text-color-dark:#000;
+  --gray-deg-1:#9BA8AB;
+  --gray-deg-2:#8c92a0;
+  --gray-deg-3:#BAB0D4;
+  --prety-dark:#06141B;
+  --orange-deg-1:#ff2525;
+  --brown-deg-1:#B6410F;
+  --brown-deg-2:#C0754D;
+  --brown-deg-3:#333333;
+  /*__________ fonts __________*/
+  --Crimson-family:"Crimson Text", serif;
+}
+img.main-logo{width:17em !important;}
+
+.image-generated-ai,
+.image-generated-ai svg
+{
+    height: 100%!important;
+    width: 100%!important;
+    object-fit: cover !important;
+    margin: 0 !important;
+}
+.image-generated-ai{margin-bottom: 0;}
+.Team-container .team-card:hover
+{
+    background: transparent;
+    box-shadow: .3rem .2rem 20px var(--gray-deg-3),
+    inset .1rem .2rem 20px var(--gray-deg-1);
+    transition: .5s ease-out;
+    border-radius: 2rem;
+}
+
+/* ********************* start styling the basket items table ********************* */
+.basket-label:hover{color: var(--brown-deg-1);}
+.basket-label{background: linear-gradient(to right,#B6410F,#253745);color:var(--orange-deg-1);}
+.basket_item-holder
+{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--gray-deg-3);
+}
+.basket_item-holder .basket_item-cover{height: 15rem;}
+.basket_item-price{font-size: 1.5rem;font-weight: 600;color: var(--gray-deg-3);}
+.basket_item-holder .input-group * {border-radius: 50%;}
+.basket_item-holder .input-group{gap: .2rem;}
+/* ********************* end styling the basket items table ********************* */
+
+/* Customizing the View Ports  */
+@media screen and (min-width:1440px){img.main-logo{width:17em !important;}}
+@media screen and (max-width:1024px){img.main-logo{width:14em !important;}}
+@media screen and (max-width:425px)
+{
+   img.main-logo{width:8em !important;}
+  .basket_item-holder{gap: .4rem;}
+  .basket_item-holder .basket_item-cover{height: 10rem;}
+  .basket_item-title{font-size: 1.2rem;}
+  .basket_item-price{font-size: 1.2rem;font-weight: 500;translate:0 -10%;}
+  .basket_item-holder .input-group{gap: .1rem;translate:0 10%;}
+  .basket_item-holder .input-group .btn{border-radius: 0;padding: .1rem .3rem;}
+}
+@media screen and (max-width:375px){.basket_item-holder .basket_item-cover{height: 7rem;}}
+@media screen and (max-width:320px){img.main-logo{width:6em !important;}.basket_item-holder .basket_item-cover{height: 5rem;}.input-group .btn-outline-primary{width: 100% !important;}}
+
+
+
+
