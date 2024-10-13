@@ -18,20 +18,11 @@
 }
 img.main-logo{width:17em !important;}
 
-.image-generated-ai,
-.image-generated-ai svg
-{
-    height: 100%!important;
-    width: 100%!important;
-    object-fit: cover !important;
-    margin: 0 !important;
-}
-.image-generated-ai{margin-bottom: 0;}
 .Team-container .team-card:hover
 {
     background: transparent;
     box-shadow: .3rem .2rem 20px var(--gray-deg-3),
-    inset .1rem .2rem 20px var(--gray-deg-1);
+    inset .1rem .2rem 20px var(--brown-deg-3);
     transition: .5s ease-out;
     border-radius: 2rem;
 }
